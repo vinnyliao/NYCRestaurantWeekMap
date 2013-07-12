@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="http://jquery-ui.googlecode.com/svn/branches/labs/selectmenu/ui.selectmenu.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://jquery-ui.googlecode.com/svn/branches/labs/selectmenu/ui.selectmenu.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="script-min.js"></script>
+
+    <title>NYC Restaurant Week Map</title>
+
+</head>
+<body>
+
+<div id="map-canvas"></div>
+
+<div id="accordion-wrapper">
+	<div id="accordion">
+		<h3><a href="#">NYC Restaurant Week Map</a></h3>
+		<div id="accordion-content">
+
+			<fieldset>
+				<label for="meal">Meal</label>
+				<select name="meal" id="meal">
+					<option value="">All</option>
+					<option value="lunch">Lunch</option>
+					<option value="dinner">Dinner</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<label for="cuisine">Cuisine</label>
+				<select name="cuisine" id="cuisine">
+					<option value="">All</option>
+					<option value="american new">American New</option>
+					<option value="american traditional">American Traditional</option>
+					<option value="asian fusion">Asian Fusion</option>
+					<option value="barbecue">Barbecue</option>
+					<option value="chinese">Chinese</option>
+					<option value="continental">Continental</option>
+					<option value="cuban">Cuban</option>
+					<option value="deli">Deli</option>
+					<option value="french">French</option>
+					<option value="greek">Greek</option>
+					<option value="indian">Indian</option>
+					<option value="italian">Italian</option>
+					<option value="japanese">Japanese</option>
+					<option value="korean">Korean</option>
+					<option value="latin american">Latin American</option>
+					<option value="mediterranean">Mediterranean</option>
+					<option value="mexican">Mexican</option>
+					<option value="pan-asian">Pan-Asian</option>
+					<option value="puerto rican">Puerto Rican</option>
+					<option value="russian">Russian</option>
+					<option value="seafood">Seafood</option>
+					<option value="southwestern">Southwestern</option>
+					<option value="spanish">Spanish</option>
+					<option value="steakhouse">Steakhouse</option>
+					<option value="thai">Thai</option>
+					<option value="vietnamese">Vietnamese</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<label for="min_rating">Minimum Rating</label>
+				<input type="number" name="min_rating" id="min_rating" min="0" max="5" step="0.1" value="0" /> 
+			</fieldset>
+
+			<fieldset>
+				<label for="min_price">Minimum Price</label>
+				<select name="min_price" id="min_price">
+					<option value="$">$</option>
+					<option value="$$">$$</option>
+					<option value="$$$">$$$</option>
+					<option value="$$$$">$$$$</option>
+					<option value="$$$$$">$$$$$</option>
+				</select>
+			</fieldset>
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
